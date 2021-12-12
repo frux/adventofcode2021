@@ -13,5 +13,7 @@ const startTimer = process.hrtime.bigint();
 const answer = main(input);
 const time = (Number(process.hrtime.bigint() - startTimer) / 1000000).toFixed(1);
 
+// eslint-disable-next-line no-console
 console.log('The answer is', answer);
+// eslint-disable-next-line no-console
 console.log(`It takes ${time}ms`);

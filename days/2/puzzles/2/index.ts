@@ -12,7 +12,7 @@ export function main(input: string) {
 	let x = 0;
 	let depth = 0;
 
-	for (let command of commands) {
+	for (const command of commands) {
 		const commandParts = command.split(' ');
 		const direction = commandParts[0];
 		const value = Number(commandParts[1]);

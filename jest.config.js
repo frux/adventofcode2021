@@ -4,4 +4,4 @@ module.exports = {
 	},
 	testRegex: '/tests.ts$',
 	moduleFileExtensions: ['ts', 'js', 'json', 'node'],
-}
+};

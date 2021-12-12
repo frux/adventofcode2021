@@ -45,7 +45,7 @@ function parseInput(input: string) {
 						.split(',')
 						.map(num => Number(num))
 				)
-			) as Range[];
+		) as Range[];
 }
 
 

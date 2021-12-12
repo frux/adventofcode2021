@@ -2,10 +2,11 @@ import { readLines } from '../../../../helpers/input';
 
 export function main(input: string) {
 	const binaries = readLines(input);
-	let bitsLength = binaries[0].length;
+	const bitsLength = binaries[0].length;
 	let oxygenBinaries = [...binaries];
 	let co2Binaries = [...binaries];
 
+	// eslint-disable-next-line no-constant-condition
 	for (let i = 0; true; i++) {
 		const index = i % bitsLength;
 
@@ -26,7 +27,7 @@ export function main(input: string) {
 		}
 	}
 
-	return parseInt(oxygenBinaries[0], 2) * parseInt(co2Binaries[0], 2)
+	return parseInt(oxygenBinaries[0], 2) * parseInt(co2Binaries[0], 2);
 }
 
 function getOxygenBit(mostCommonBit: string | null) {

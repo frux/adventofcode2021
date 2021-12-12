@@ -22,9 +22,9 @@ export function main(input: string) {
 }
 
 function invertBits(bin: string) {
-	let len = bin.length;
+	const len = bin.length;
 
-	let mask = Math.pow(2, len) - 1;
+	const mask = Math.pow(2, len) - 1;
 
 	return (parseInt(bin, 2) ^ mask).toString(2);
-};
+}

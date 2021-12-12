@@ -49,7 +49,7 @@ function parseInput(input: string) {
 						.split(',')
 						.map(num => Number(num))
 				)
-			) as Range[];
+		) as Range[];
 }
 
 function isDiagonal(range: Range) {

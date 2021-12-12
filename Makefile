@@ -1,4 +1,6 @@
 run:
 	npx ts-node ./scripts/run.ts $(day) $(puzzle)
-test:
+lint:
+	npx eslint ./
+test: lint
 	npx jest
