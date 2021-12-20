@@ -8,6 +8,8 @@ const E = 0b0000100;
 const F = 0b0000010;
 const G = 0b0000001;
 
+type BinaryPattern = number;
+
 export function main(input: string) {
 	const entries = readLines(input).map(
 		entry => entry.split(' | ').map(
@@ -28,9 +30,9 @@ export function main(input: string) {
 	return sum;
 }
 
-function resolveConnection(patterns: number[]) {
-	const patternBySize: Record<number, number[]> = {};
-	const digitToPattern: Record<number, number> = {};
+function resolveConnection(patterns: BinaryPattern[]) {
+	const patternBySize: Record<number, BinaryPattern[]> = {};
+	const digitToPattern: Record<number, BinaryPattern> = {};
 
 	for (const pattern of patterns) {
 		const enbaledBitsCount = countEnabledBits(pattern);
