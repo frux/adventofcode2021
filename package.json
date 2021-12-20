@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@frux/eslint-plugin": "^1.0.5",
+    "@frux/eslint-plugin": "^1.0.6",
     "@types/jest": "^27.0.3",
     "eslint": "^8.3.0",
     "jest": "^27.4.2",
